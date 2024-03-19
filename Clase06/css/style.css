@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div
+{
+    background-color: red;
+    width: 200px;
+    height: 50px;
+}
+body{
+    background-color: gray;
+}
+
+h1{
+    color: white;
+}
+
+#textoAzul{
+    color: blue;
+}
+
+
+p{
+    color: whitesmoke !important;
+}
+
+
+.textoGeneral
+{
+    color: red;
+}
+
+.textoGeneralTamaño
+{
+    font-size: 25px;
+}
+
+
+
+
+
+
