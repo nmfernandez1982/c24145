@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    }
+    
+    /**/
+    div{
+        width: 160px;
+        height: 160px;
+        background-color: red;
+        max-width: 300px;
+        max-height: 300px;        
+        box-sizing: border-box;
+    }
+
+    #caja2{
+        position: relative;
+        left:160px;
+        top:-160px;
+    }
