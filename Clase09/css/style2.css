@@ -1,0 +1,43 @@
+/*
+p:first-child{
+    color:red;
+}
+
+
+p:last-child{
+    color:green;
+}
+
+p:nth-child(3n){
+    color: blue;
+}
+
+p:nth-child(even){
+    color: yellowgreen;
+}
+
+p:nth-child(odd){
+    color:white;
+}
+
+div{
+    background-color: gray;
+    width: 200px;    
+}
+
+div:hover{
+    background-color: lightgray;
+    width: 300px;
+}
+*/
+
+p::first-letter{color:red;}
+p::first-line{background-color: blue;
+}
+
+p::before{content:"😜";}
+p::after{content: "✔";}
+
+
+
+

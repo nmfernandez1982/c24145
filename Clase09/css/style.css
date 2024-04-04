@@ -1,0 +1,35 @@
+
+/*
+p,div,h1{
+    background-color: red;
+}
+
+.textoRojo,h1,#botonPrincipal{
+    background-color: red;
+}
+*/
+
+/*Selector avanzado*/
+/*
+.texto p{
+    color:red;
+}
+*/
+
+
+/*
+.texto > p{
+    color:red;
+}
+*/
+
+/*
+.texto~p
+{
+    color:red;
+}
+*/
+
+
+
+

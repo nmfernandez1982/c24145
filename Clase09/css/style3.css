@@ -1,0 +1,62 @@
+.caja{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-left: 200px;
+    margin-top: 200px;
+    }
+
+
+/*translate*/
+/*
+.caja{
+     transition: transform 1s ease;
+}
+
+.caja:hover{
+   transform: translate(20px,50px); 
+}
+*/
+
+/*scala*/
+
+/*
+.caja{
+    transition: transform 1s ease;
+}
+
+.caja:hover{
+    transform: scale(1.5);
+}
+*/
+
+/*rotate*/
+
+/*
+.caja{
+    transition: transform 1s ease;
+}
+
+.caja:hover{
+    transform: rotate(45deg);
+}
+*/
+.caja{
+    transition: transform 1s ease;
+}
+
+.caja:hover{    
+    transform: translate(20px,50px)  rotate(45deg) scale(1.5);
+}
+
+@keyframes cambioColor
+{
+    0%{background-color: red;}
+    50%{background-color: orange;}
+    100%{background-color: yellow;}
+}
+
+.caja:hover{
+    animation: cambioColor 3s infinite ;
+}
+    
