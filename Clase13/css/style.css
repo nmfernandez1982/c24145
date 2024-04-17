@@ -1,0 +1,13 @@
+body{
+    background-color: grey;
+}
+
+
+#container{
+    width: 80%;
+    margin: auto;    
+}
+
+.bgcolor{
+    background-color: gray !important;
+}
