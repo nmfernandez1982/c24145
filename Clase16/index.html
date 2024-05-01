@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+        <script>
+            var opc=3;
+            //var opc=prompt("Ingrese un valor: ");
+            opc=Number(opc);
+            switch(opc)
+            {
+                case 1:
+                      //si vale 1
+                      console.log("EL valor es 1");
+                      break;
+                case 2:
+                     //si vale 2
+                     console.log("EL valor es 2");
+                     break;
+                case 3:
+                    //si vale 3
+                    console.log("EL valor es 3");
+                    break;
+                default:
+                    //si vale cualquier otro valar
+                    console.log("EL valor es otro");
+                    break;
+            }
+
+            //alert("Hola mundo.....");
+           
+
+            //iteraciones
+            
+            // do while
+            //se ejecuta 1 vez al menos , aunque no se cumpla la condicion.
+            var aux=1000;
+            do{
+              console.log("Se imprimio la linea: "+aux); 
+              aux=aux+1;
+              //ux++; 
+            }while(aux<100);
+
+
+            //si la condicion no se cumple no se ejecuta nada.
+            aux=1000;
+            while(aux<10)
+            {
+                console.log("Se imprimio la linea con while: "+aux); 
+                aux++; 
+            }
+
+            var numeros=["Hola",12,4,1,87,"Nicolas",true,null,12,3,4,1,7,8,5,4,3,8,1];
+
+            console.log(numeros);
+
+            console.log(numeros[9]);
+
+            console.log(numeros[2]);
+
+            console.log(numeros[4]);
+
+            var suma=numeros[3]+numeros[9];
+
+            console.log("La suma es:"+suma);
+            console.log("--------------");
+            
+            for(aux=0;aux<numeros.length;aux++)
+            {
+                console.log(numeros[aux]);
+            }
+
+
+           
+            
+
+
+
+        </script>
+    </body>
+</html>
