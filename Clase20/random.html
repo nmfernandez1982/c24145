@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       </head>
+    <body>
+        <h1>Informacion del Usuario</h1>
+
+        <div id="user-info">
+            <p>Datos</p>
+        </div>
+
+        <script>
+                //hacer un pedido(Solicitud-request) a la API
+                fetch('https://randomuser.me/api/')
+                  .then(response=>response.json())
+                  .then(data=>
+                  {
+                    const usuario=data.results[0];
+                    const name=usuario.name.first;
+                    const last=usuario.name.last;
+                    //mostrar por el navegador
+                    const userInfo=document.getElementById('user-info');
+                    userInfo.innerHTML=`<p><strong>${name}</strong></p><br>
+                                        <p><strong>${last}</strong></p>`;
+                  })
+                  .catch(error=>{
+                    console.log("No se obtuvieron datos",error);
+                  });
+        </script>
+    
+    </body>
+</html>
