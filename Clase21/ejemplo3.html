@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <h1 id="titulo">Texto Original</h1>
+        <p class="parrafo" >Parrafo 1</p>
+        <p class="parrafo">Parrafo 1</p>
+        <p class="parrafo">Parrafo 1</p>
+        <p class="parrafo">Parrafo 1</p>
+
+        <button id="boton">Cambiar Texto</button>
+
+
+        <script>
+            document.querySelector("#boton").addEventListener("click",function()
+            {
+                var titulo=document.querySelector("#titulo");
+                var parrafos=document.querySelectorAll(".parrafo");
+
+                titulo.style.color="blue";
+
+                parrafos.forEach(function(parrafo)
+                {
+                    parrafo.style.fontWeight="bold";   
+                });
+
+            });
+        </script>
+    </body>
+</html>

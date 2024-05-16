@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     </head>
+        
+    <style>
+        .error{color:red;}
+    </style>
+    
+    <body>
+        <h2>Formulario con validaciones</h2>
+
+        <form id="miFormulario">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" name="nombre" type="text">
+                <span id="nombreError" class="error" ></span>
+            </div>
+
+            <div>
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email" >
+                    <span id="emailError" class="error"></span>
+            </div>
+
+            <button type="submit" >Enviar</button>
+
+        </form>
+
+        <script>
+            document.getElementById("miFormulario").addEventListener("submit",function(event)
+            {
+                event.preventDefault();
+
+                var nombre=document.getElementById("nombre").value;
+                var email=document.getElementById("email").value;
+                var nombreError=document.getElementById("nombreError");
+                var emailError=document.getElementById("emailError");
+                var regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                nombreError.textContent="";
+                emailError.textContent="";
+
+                if(nombre.trim()==="")
+                {
+                    nombreError.textContent="El nombre no puede estar vacio";
+                    return;
+                }
+
+                if(!regexEmail.test(email))
+                {
+                    emailError.textContent="El mail no cumple con el requisito";
+                    return ;
+                }
+                alert("EL formulario se envio con exito");
+            });
+        </script>
+    </body>
+</html>
