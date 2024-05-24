@@ -1,0 +1,1 @@
+SELECT * FROM prueba24145.personal;
