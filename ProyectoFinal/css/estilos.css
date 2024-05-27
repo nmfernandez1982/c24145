@@ -174,7 +174,7 @@ body{
     }
     .buscadorPrincipal{
         background-color: #181419;
-        color:white;
+        color:rgb(255, 255, 255);
         height: 50vh;
         display: flex;
         flex-direction: column;
@@ -194,7 +194,7 @@ body{
             .inputBuscador{
                 border: 2px solid white;
                 border-radius: 25px;
-                color: #ffffff;
+                color: #000000;
                 font-size: 1.2rem;
                 height: 50px;
                 margin: 20px 0px;
@@ -256,6 +256,7 @@ body{
                         height: 100%;
                         object-fit: cover;
                         border-radius: 10px;
+                       
                     }
                   
                     .tituloPelicula{
@@ -268,7 +269,7 @@ body{
                         width: 100%;
                         transform: translateY(-50%) translateX(-50%);
                         h4 {
-                            font-size: 2rem;
+                            font-size: 1.6rem;
                             font-weight: bold;
                             opacity: 0;
                             margin-bottom: 0.5rem;
@@ -279,24 +280,23 @@ body{
                     }
                     &:hover{
                        box-shadow: 0 0 30px #9f3648cd;
-                       transform: scale(1.1);
+                       transform: scale(0.9);
                       
                     }
-                    &:hover h4 {
-                        opacity: 1;
-                      
-                    }
-                    &:hover::before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
+                    &:hover .tituloPelicula{
                         width: 100%;
                         height: 100%;
-                        border-radius: 10px;
-                        background-color: #9f3648; /* Color rojo transparente */
-                        z-index: 1; /* Para asegurarse de que esté sobre la imagen */
+                        backdrop-filter: blur(20px);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                     }
+                    &:hover h4 {
+                        width: 100%;
+                        padding: 0.5rem;
+                        opacity: 1;
+                    }
+                 
                 }
             }
           
@@ -426,11 +426,7 @@ body{
                        
                     }
                 }
-                &:hover{
-                    box-shadow:initial;
-                    transform: scale(0.9);
-                   
-                }
+              
                
             }
             .boton{
@@ -566,7 +562,7 @@ body{
                 padding:40px;
                 input:not(.check,.boton),select{
                     width: 100%;
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                     height: 40px;
                     padding: 0px 20px;
                     font-size: 1.2rem;
@@ -574,8 +570,18 @@ body{
                     border: 2px solid #9f3647;
                     background-color: #333333;
                     outline: none;
-                    color:white;
+                    color:rgb(255, 255, 255);
                 }
+                .error input:not(.check,.boton),.error select{
+                    border: 1px solid #ff0000;
+                }
+                .error-text{
+                    color: #ff0000;
+                    font-size: 0.8rem;
+                    margin-top:0px;
+                    margin-bottom: 10px;
+                }
+              
                 .terminos{
                     font-size: 0.8rem;
                     display: flex;
@@ -611,6 +617,8 @@ body{
    
     }
 }
+
+
 
 /*media querys para mobile PAGINA registrarse*/
 @media (max-width: 1200px) {

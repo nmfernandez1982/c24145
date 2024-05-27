@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro | CAC-MOVIES</title>
+    <title>Iniciar Sesión | CAC-MOVIES</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
@@ -16,36 +16,33 @@
             <i class="fas fa-film" aria-hidden="true"></i>
             <span>CAC-Movies</span>
         </a>
-       
     </header>
-    <main  id="main" class="main">
-      <section  data-aos="zoom-in"  data-aos-duration="1000" class="seccionRegistrarse">
-        <form  action="" method="post">
-            <h2 class="tituloRegistrarse">Iniciar Sesión</h2>
-         
-            <div>
-                <input type="email" placeholder="Email" required id="email" name="email">
-            </div>
-            <div>
-                <input type="password" placeholder="Contraseña" required id="password" name="password">
-            </div>
-          
-          
-            <div>
-                <input  class="boton" type="submit" value="Iniciar Sesión">
-            </div>
-           
-            <div > 
-               
-                <a id="ayuda" class="ayuda" href="registrarse.html">Registrarse</a>
-            </div>
-        </form>
-      </section>
-
+    <main id="main" class="main">
+        <section data-aos="zoom-in" data-aos-duration="1000" class="seccionRegistrarse">
+            <!--pongo get ya que en github pages da error el method post-->
+            <form action="" method="get">
+                <h2 class="tituloRegistrarse">Iniciar Sesión</h2>
+                <div>
+                    <input type="email" placeholder="Email" id="email" name="email">
+                    <div class="error-text"></div>
+                </div>
+                <div>
+                    <input type="password" placeholder="Contraseña" id="password" name="password">
+                    <div class="error-text"></div>
+                </div>
+                <div>
+                    <input class="boton" type="submit" value="Iniciar Sesión">
+                </div>
+                <div>
+                    <a id="ayuda" class="ayuda" href="registrarse.html">Registrarse</a>
+                </div>
+            </form>
+        </section>
     </main>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-    AOS.init();
+        AOS.init();
     </script>
+    <script src="../js/valida_iniciosesion.js"></script>
 </body>
 </html>
