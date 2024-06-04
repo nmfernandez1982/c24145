@@ -1,0 +1,7 @@
+-Escribe un programa que solicite al usuario su nombre y luego imprima un saludo personalizado.
+-Escribe un programa que calcule la suma de todos los números pares desde 1 hasta un número N dado. 
+-Escribe un programa que sume dos números enteros ingresados por el usuario y muestre el resultado.  
+-Escribe un programa que determine si un número ingresado por el usuario es par o impar.
+-Escribe un programa cargue un array de notas de 120 alumnos (1 a 10) y se obtenga como resultado el promedio.
+-Generar un array de 1000 elementos (enteros) y cargarlo con valores aleatorios entre 1 y 100.
+-Del array anterior obtener el promedio de todos los valores, el máximo y el mínimo (Sin utilizar los métodos).
