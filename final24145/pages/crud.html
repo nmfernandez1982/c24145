@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CAC-MOVIES</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+        <link rel="stylesheet" href="../css/estilos.css">
+        <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navegacion">
+                <a class="anclaLogo" href="#">
+                    <i class="fas fa-film" aria-hidden="true"></i>
+                    <span>CAC-Movies</span>
+                </a>
+                <ul class="listaNav">
+                    <li class="listaItem"><a class="linkNav" href="#tendencias">Tendencias</a></li>
+                    <li class="listaItem"><a class="linkNav" href="./pages/registrarse.html">Registrarse</a></li>
+                    <li class="listaItem"><a class="linkNav iniciarSesion" href="./pages/iniciosesion.html">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main" class="main">
+            <section class="sectionFormulario" >
+                <br>
+                <!-- Formulario -->
+                 <form id="itemForm" class="mb-4">
+                    <div class="row">
+                        <div class="col">
+                            <input type="hidden" id="id" name="id">
+
+                            <div class="form-group">
+                                <label for="titulo">Titulo:</label>
+                                <input type="text" class="form-control" id="titulo" name="titulo" requerid >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="fecha_lanzamiento">Fecha Lanz.:</label>
+                                <input type="date" class="form-control" id="fecha_lanzamiento" name="fecha_lanzamiento" requerid >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="genero">Genero:</label>
+                                <input type="text" class="form-control" id="genero" name="genero" requerid >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="duracion">Duracion:</label>
+                                <input type="text" class="form-control" id="duracion" name="duracion" requerid >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="director">Directo:</label>
+                                <input type="text" class="form-control" id="director" name="director" requerid >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="reparto">Reparto:</label>
+                                <input type="text" class="form-control" id="reparto" name="reparto" requerid >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sinopsis">Sinopsis:</label>
+                                <input type="text" class="form-control" id="sinopsis" name="sinopsis" requerid >
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="imagen">Imagen:</label>
+                                <input type="file" accept="image/*" class="form-control" id="imagen" name="imagen" requerid >
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                 </form>
+            </section>
+
+        <!-- tabla -->
+
+        <section class="sectionFormularioTabla">
+            <h2>Peliculas</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Titulo</th>
+                        <th>Fecha Lanz.</th>
+                        <th>Genero</th>
+                        <th>Duracion</th>
+                        <th>Director</th>
+                        <th>Reparto</th>
+                        <th>Sinopsis</th>                        
+                        <th colspan="2">Accciones</th>
+                    </tr>
+                    <tbody id="itemsTableBody">
+                            <!-- Lo vamos a generar con JS -->
+                    </tbody>
+                </thead>
+            </table>
+
+        </section>
+        </main>
+    
+        <footer class="footer">
+            <nav class="navegacion">
+                <ul class="listaNav">
+                    <li class="listaItem"><a class="linkNav" href="">Términos y condiciones</a></li>
+                    <li class="listaItem"><a class="linkNav" href="">Preguntas frecuentes</a></li>
+                    <li class="listaItem"><a class="linkNav" href="">Ayuda</a></li>
+                    <li class="listaItem"><a class="linkNav administradorPeliculas" href="../index.html">inicio</a></li>
+                </ul>
+            </nav>
+            <a href="#main" class="flechaArriba">
+                <img src="./assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
+            </a>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="./js/app.js"></script>
+    </body>
+</html>
