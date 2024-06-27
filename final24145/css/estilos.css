@@ -31,7 +31,7 @@
     background:#9f3647;
 }
 body{
-    background-color: #181419 !important;
+    background-color: #181419;
     color:white; 
      /* scrollbar-color: #9f3647  #181419; /*nuevo
      scrollbar-width: thin;*/
@@ -134,43 +134,6 @@ body{
 }
 /*ESTILOS PARA MAIN ESCRITORIO*/
 .main{
-    .sectionFormulario
-    {
-        color:white;
-        width: 60%; 
-        margin: auto;
-    }
-    .sectionFormularioTabla
-    {
-        color:white;
-        width: 60%; 
-        margin: auto; 
-    }
-
-    th, td {
-        border: 1px solid #9f3647;
-        padding: 8px;
-        text-align: left;
-    }
-    th {
-        background-color: #9f3647; /* Fondo negro para resaltar el texto blanco */
-        color: white ; /* Texto en blanco */
-        text-align: center;
-    }
-
-    td {
-        color: white; /* Texto en blanco */
-        text-align: center;
-    }
-
-    
-
-
-
-
-
-
-
     .sectionPrincipal{
         color:white;
         background:linear-gradient(to right top, #0000008a, #0000008a), url(../assets/img/banner-bg.jpg);
